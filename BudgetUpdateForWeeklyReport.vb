@@ -1,10 +1,15 @@
-Sub updateBudget()
+Sub A___updateBudget_Phase_1()
 
     copyLeadsIntoPreviousWeek
     copySpentIntoPreviousWeek
-    updateData
-    copySpentIntoWeeklyBudgetPlanning
+    UpdateFacebookBudget
 
+
+
+End Sub
+Sub A___updateBudget_Phase_2()
+
+    copySpentIntoWeeklyBudgetPlanning
 
 End Sub
 Sub copyLeadsIntoPreviousWeek()
@@ -67,10 +72,13 @@ Sub copySpentIntoPreviousWeek()
     Range("E92").Copy
     Range("E96").PasteSpecial xlPasteValues
 
+    MsgBox ("You can now refresh the data")
+
 
 End Sub
 
 Sub copySpentIntoWeeklyBudgetPlanning()
+
 
     Range("E16").Copy
     Range("C5").Select
@@ -84,6 +92,17 @@ Sub copySpentIntoWeeklyBudgetPlanning()
         End If
     Next i
 
+    Range("E17").Copy
+    Range("C08").Select
+    Dim l As Integer
+    For l = 1 To 12
+        If ActiveCell.Value = "" Then
+            ActiveCell.PasteSpecial xlPasteValues
+            Exit For
+        Else
+            ActiveCell.Offset(0, 1).Select
+        End If
+    Nextl
 
     Range("E53").Copy
     Range("C42").Select
@@ -97,6 +116,17 @@ Sub copySpentIntoWeeklyBudgetPlanning()
         End If
     Next j
 
+    Range("E54").Copy
+    Range("C45").Select
+    Dim m As Integer
+    For m = 1 To 12
+        If ActiveCell.Value = "" Then
+            ActiveCell.PasteSpecial xlPasteValues
+            Exit For
+        Else
+            ActiveCell.Offset(0, 1).Select
+        End If
+    Nextm
 
     Range("E91").Copy
     Range("C80").Select
@@ -110,12 +140,17 @@ Sub copySpentIntoWeeklyBudgetPlanning()
         End If
     Next k
 
-
-End Sub
-
-Sub updateData()
-
-    ActiveWorkbook.RefreshAll
+    Range("E92").Copy
+    Range("C83").Select
+    Dim n As Integer
+    For n = 1 To 12
+        If ActiveCell.Value = "" Then
+            ActiveCell.PasteSpecial xlPasteValues
+            Exit For
+        Else
+            ActiveCell.Offset(0, 1).Select
+        End If
+    Nextn
 
 End Sub
 
