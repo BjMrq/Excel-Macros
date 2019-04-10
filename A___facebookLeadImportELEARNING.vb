@@ -1,6 +1,6 @@
 Dim detail As String ' Module-level variable.
 
-Sub A___facebookLeadImportNoProgramChoice()
+Sub A___facebookLeadImportELEARNING()
 '
 ' facebookLeadImportToCRMOpenHouse Macro
 ' Clean and consolidate the data from Facebook Lead Gen before importing into the CRM
@@ -41,63 +41,66 @@ Sub formatHeader()
 
 
     Range("A1").Select
-    ActiveCell.FormulaR1C1 = "E-mail 1"
+    ActiveCell.FormulaR1C1 = "Program Choice 1"
 
     Range("B1").Select
-    ActiveCell.FormulaR1C1 = "Home Phone"
+    ActiveCell.FormulaR1C1 = "E-mail 1"
 
     Range("C1").Select
-    ActiveCell.FormulaR1C1 = "First Name"
+    ActiveCell.FormulaR1C1 = "Home Phone"
 
     Range("D1").Select
-    ActiveCell.FormulaR1C1 = "Last Name"
+    ActiveCell.FormulaR1C1 = "First Name"
 
     Range("E1").Select
-    ActiveCell.FormulaR1C1 = "Explicit Opt-in"
+    ActiveCell.FormulaR1C1 = "Last Name"
 
     Range("F1").Select
-    ActiveCell.FormulaR1C1 = "Explicit Opt-in Date"
+    ActiveCell.FormulaR1C1 = "Explicit Opt-in"
 
     Range("G1").Select
-    ActiveCell.FormulaR1C1 = "Implicit Opt-in"
+    ActiveCell.FormulaR1C1 = "Explicit Opt-in Date"
 
     Range("H1").Select
-    ActiveCell.FormulaR1C1 = "Implicit Opt-in Date"
+    ActiveCell.FormulaR1C1 = "Implicit Opt-in"
 
     Range("I1").Select
-    ActiveCell.FormulaR1C1 = "Lead Source (Marketo)"
+    ActiveCell.FormulaR1C1 = "Implicit Opt-in Date"
 
     Range("J1").Select
-    ActiveCell.FormulaR1C1 = "Lead Source Detail"
+    ActiveCell.FormulaR1C1 = "Lead Source (Marketo)"
 
     Range("K1").Select
-    ActiveCell.FormulaR1C1 = "Rating"
+    ActiveCell.FormulaR1C1 = "Lead Source Detail"
 
     Range("L1").Select
-    ActiveCell.FormulaR1C1 = "Source"
+    ActiveCell.FormulaR1C1 = "Rating"
 
     Range("M1").Select
-    ActiveCell.FormulaR1C1 = "Medium"
+    ActiveCell.FormulaR1C1 = "Source"
 
     Range("N1").Select
-    ActiveCell.FormulaR1C1 = "Content"
+    ActiveCell.FormulaR1C1 = "Medium"
 
     Range("O1").Select
-    ActiveCell.FormulaR1C1 = "First Contact"
+    ActiveCell.FormulaR1C1 = "Content"
 
     Range("P1").Select
-    ActiveCell.FormulaR1C1 = "Campus"
+    ActiveCell.FormulaR1C1 = "First Contact"
 
     Range("Q1").Select
-    ActiveCell.FormulaR1C1 = "Event Source"
+    ActiveCell.FormulaR1C1 = "Campus"
 
     Range("R1").Select
-    ActiveCell.FormulaR1C1 = "Marketing Event"
+    ActiveCell.FormulaR1C1 = "Event Source"
 
     Range("S1").Select
-    ActiveCell.FormulaR1C1 = "Language"
+    ActiveCell.FormulaR1C1 = "Marketing Event"
 
     Range("T1").Select
+    ActiveCell.FormulaR1C1 = "Language"
+
+    Range("U1").Select
     ActiveCell.FormulaR1C1 = "GeoCountry"
 
 
@@ -115,13 +118,68 @@ Sub formatOptInAndPhone()
         SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
         ReplaceFormat:=False
 
+    Cells.Replace What:="e-business", Replacement:="LEACE-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="affaires_électroniques", Replacement:="LEACE-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="administrative_assistant", Replacement:="LCE6S-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="adjoint_administratif", Replacement:="LCE6S-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="event_planning_and_management", Replacement:="LCAD0-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="planification_et_gestion_d'événements", Replacement:="LCAD0-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="stylisme_de_mode", Replacement:="NTC0L-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="fashion_styling", Replacement:="NTC0L-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="modélisation_3d_de_jeux_vidéo", Replacement:="NTL0Y-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="video_game_3d_modeling", Replacement:="NTL0Y-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="design_infographique", Replacement:="NWC0W-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="infographic_design", Replacement:="NWC0W-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="commercialisation_de_la_mode", Replacement:="NTC1H-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="fashion_marketing", Replacement:="NTC1H-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="design_d'intérieur", Replacement:="NTA1P-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="interior_design", Replacement:="NTA1P-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="intégration_multimédia", Replacement:="NWE30-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Cells.Replace What:="multimedia_integration", Replacement:="NWE30-elarning", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+
     Dim nbRecords As Integer
 
     Range("A2").Select
     nbRecords = Range(Selection, Selection.End(xlDown)).Rows.Count
 
 
-    Range("B2").Select
+    Range("C2").Select
 
 
     Dim i As Integer
@@ -147,7 +205,7 @@ Sub ExpOptInDate()
     nbRecords = Range(Selection, Selection.End(xlDown)).Rows.Count
 
 
-    Range("F2").Select
+    Range("G2").Select
 
     Dim thisDate As String
     thisDate = Date
@@ -157,7 +215,7 @@ Sub ExpOptInDate()
 
     For i = 2 To nbRecords + 1
 
-    If Range("E" & i).Value = "yes" Then
+    If Range("F" & i).Value = "yes" Then
 
         ActiveCell.Value = thisDate
 
@@ -181,18 +239,18 @@ Sub implicitOptIn()
     nbRecords = Range(Selection, Selection.End(xlDown)).Rows.Count
 
 
-    Range("G2").Select
+    Range("H2").Select
 
 
     Dim i As Integer
 
     For i = 2 To nbRecords + 1
 
-    If Range("E" & i).Value = "no" Then
+    If Range("F" & i).Value = "no" Then
 
         ActiveCell.Value = "yes"
 
-        ElseIf Range("E" & i).Value = "yes" Then
+        ElseIf Range("F" & i).Value = "yes" Then
 
         ActiveCell.Value = "no"
 
@@ -215,7 +273,7 @@ Sub implicitOptInDate()
     nbRecords = Range(Selection, Selection.End(xlDown)).Rows.Count
 
 
-    Range("H2").Select
+    Range("I2").Select
 
     Dim thisDate As String
     thisDate = Date
@@ -225,7 +283,7 @@ Sub implicitOptInDate()
 
     For i = 2 To nbRecords + 1
 
-    If Range("E" & i).Value = "no" Then
+    If Range("F" & i).Value = "no" Then
 
         ActiveCell.Value = thisDate
 
@@ -247,7 +305,7 @@ Sub rating()
     nbRecords = Range(Selection, Selection.End(xlDown)).Rows.Count
 
 
-    Range("K2").Select
+    Range("L2").Select
 
 
     Dim i As Integer
@@ -272,7 +330,7 @@ Sub geoCountry()
     nbRecords = Range(Selection, Selection.End(xlDown)).Rows.Count
 
 
-    Range("T2").Select
+    Range("U2").Select
 
 
     Dim i As Integer
@@ -297,7 +355,7 @@ Sub source()
     nbRecords = Range(Selection, Selection.End(xlDown)).Rows.Count
 
 
-    Range("L2").Select
+    Range("M2").Select
 
 
     Dim i As Integer
@@ -323,7 +381,7 @@ Sub medium()
     nbRecords = Range(Selection, Selection.End(xlDown)).Rows.Count
 
 
-    Range("M2").Select
+    Range("N2").Select
 
 
     Dim i As Integer
@@ -349,7 +407,7 @@ Sub content()
     nbRecords = Range(Selection, Selection.End(xlDown)).Rows.Count
 
 
-    Range("N2").Select
+    Range("O2").Select
 
 
     Dim i As Integer
@@ -375,7 +433,7 @@ Sub firstContact()
     nbRecords = Range(Selection, Selection.End(xlDown)).Rows.Count
 
 
-    Range("O2").Select
+    Range("P2").Select
 
 
     Dim i As Integer
@@ -401,7 +459,7 @@ Sub marketingEvent()
     nbRecords = Range(Selection, Selection.End(xlDown)).Rows.Count
 
 
-    Range("R2").Select
+    Range("S2").Select
 
 
     Dim i As Integer
@@ -427,7 +485,7 @@ Sub leadSource()
     nbRecords = Range(Selection, Selection.End(xlDown)).Rows.Count
 
 
-    Range("I2").Select
+    Range("J2").Select
 
     Dim i As Integer
 
@@ -458,7 +516,7 @@ Sub campus()
 
     campus = InputBox(Message, Title)
 
-    Range("P2").Select
+    Range("Q2").Select
 
     Dim i As Integer
 
@@ -488,7 +546,7 @@ Sub eventDetail()
 
     detail = InputBox(Message, Title)
 
-    Range("J2").Select
+    Range("K2").Select
 
     Dim i As Integer
 
@@ -502,7 +560,7 @@ Sub eventDetail()
     Next i
 
 
-    Range("Q2").Select
+    Range("R2").Select
 
     Dim j As Integer
 
@@ -534,7 +592,7 @@ Sub language()
 
     language = InputBox(Message, Title)
 
-    Range("S2").Select
+    Range("T2").Select
 
     Dim i As Integer
 
@@ -551,24 +609,9 @@ Sub language()
 End Sub
 Sub endFormat()
 
-    Columns("A:S").Select
-    Selection.ColumnWidth = 12
 
-    Columns("G:G").ColumnWidth = 6
-    Columns("E:E").ColumnWidth = 6
-    Columns("J:J").ColumnWidth = 26.43
-    Columns("O:O").ColumnWidth = 17.14
-    Columns("Q:Q").ColumnWidth = 26.43
-    Columns("H:H").ColumnWidth = 10.29
-    Columns("F:F").ColumnWidth = 11.14
-    Columns("M:M").ColumnWidth = 9.57
-    Columns("N:N").ColumnWidth = 10
-    Columns("O:O").ColumnWidth = 15.86
-    Columns("L:L").ColumnWidth = 10.71
-    Columns("K:K").ColumnWidth = 18.86
-    Columns("I:I").ColumnWidth = 9.43
 
-    Range("B2").Select
+    Range("C2").Select
 
     Dim i As Integer
 

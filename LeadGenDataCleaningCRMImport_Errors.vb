@@ -1,4 +1,4 @@
-Sub cleanDataErrorFacebookLeadGen()
+Sub A___cleanDataErrorFacebookLeadGen()
 '
 ' cleanDataErrorFacebookLeadGen Macro
 '
@@ -13,10 +13,13 @@ Sub cleanDataErrorFacebookLeadGen()
         ), Array(14, 1), Array(15, 1), Array(16, 1), Array(17, 1), Array(18, 1), Array(19, 1)), _
         TrailingMinusNumbers:=True
 
+    Columns("A:A").Select
+    Selection.Delete Shift:=xlToLeft
+
     Columns("B:P").Select
     Selection.Delete Shift:=xlToLeft
 
-    Columns("D:D").Select
+    Columns("D:F").Select
     Selection.Delete Shift:=xlToLeft
 
     ActiveWorkbook.SaveAs Filename:= _
